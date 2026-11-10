@@ -1,0 +1,23 @@
+# dependencies
+node_modules
+
+# build
+dist
+*.tsbuildinfo
+
+# env (필요해지면 .env.example만 커밋)
+.env*
+!.env.example
+
+# vercel
+.vercel
+
+# logs
+npm-debug.log*
+*.log
+
+# editor / OS
+.DS_Store
+.idea
+.vscode/*
+!.vscode/extensions.json
