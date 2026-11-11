@@ -6,8 +6,7 @@ export interface HomeState {
   obedience: Obedience | null;
 }
 
-export type HomeIntent =
-  { type: 'load' } | { type: 'loaded'; obedience: Obedience | null } | { type: 'failed' };
+export type HomeIntent = { type: 'loaded'; obedience: Obedience | null } | { type: 'failed' };
 
 export function initialHomeState(weekStart: LocalDate): HomeState {
   return { status: 'loading', weekStart, obedience: null };
